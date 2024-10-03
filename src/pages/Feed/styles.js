@@ -22,13 +22,14 @@ export const Title = styled.h2`
 `
 
 export const TitleHighlight = styled.span`
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-        color: #FFFFFF70;
-        margin-bottom: 24px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF70;
+    display:flex;
+    margin-bottom: 24px;
 `
 
 export const TextContent = styled.p`
