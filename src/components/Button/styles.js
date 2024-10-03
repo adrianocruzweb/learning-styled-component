@@ -16,9 +16,14 @@ export const ButtonContainer = styled.button`
 
         background-color: #E4105D;
 
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
         // elemento que vem por fora do button
         &::after {
-            content: '',
+            content: '';
             position: absolute;
             border: 1px SOLID #E4105D;
             top: -5px;
