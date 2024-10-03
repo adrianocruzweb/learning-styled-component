@@ -1,11 +1,12 @@
-import { ButtonContainer } from "../../components/Button/styles";
+import { Button } from "../../components/Button";
+import { Login } from "../../pages/Login";
 
 const App = () => {
   return (
     <div className="App">
       <h1>Home</h1>
-      <ButtonContainer title="Entrar" />
-      <ButtonContainer title="Cadastrar" variant="secondary"/>
+      <Button title="Entrar" />
+      <Button title="Cadastrar" variant="secondary"/>
     </div>
   );
 }
