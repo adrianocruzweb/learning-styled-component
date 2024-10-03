@@ -12,24 +12,32 @@ import {
     UserPicture
 } from './styles';
 
-const Header = () => {
+const Header = ({autenticado}) => {
   return (
     <Wrapper>
         <Container>
             <Row>
                 <img src={logo} alt="Logo da dio"/>
-                <BuscarInputContainer>
-                    <Input placeholder='Buscar...' />
-                </BuscarInputContainer>
-                <Menu>Live Code</Menu>
-                <Menu>Global</Menu>
-                <Button title="Entrar"/>
-                <Button title="Cadastrar"/>
+                {autenticado ? (
+                    <>
+                    <BuscarInputContainer>
+                        <Input placeholder='Buscar...' />
+                    </BuscarInputContainer>
+                    <Menu>Live Code</Menu>
+                    <Menu>Global</Menu>
+                    </>
+                ): null}
             </Row>
             <Row>
-                <MenuRight>Home</MenuRight>
-                <Button title="Entrar"/>
-                <Button title="Cadastrar"/>
+                {autenticado ? (
+                    <UserPicture src="https://avatars.githubusercontent.com/u/17552862?s=400&u=b6bd20d83df4236a3a80306794ed63ed9145da28&v=4"/>
+                ) : (
+                    <>
+                    <MenuRight>Home</MenuRight>
+                    <Button title="Entrar"/>
+                    <Button title="Cadastrar"/>
+                    </>
+                )}
             </Row>
         </Container>
     </Wrapper>
