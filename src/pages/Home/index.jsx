@@ -1,12 +1,14 @@
 import { Button } from "../../components/Button";
-import { Login } from "../../pages/Login";
+import { Header } from "../../components/Header";
+/* import { Link } from "react-router-dom"; */
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Home</h1>
+      <Header>Home</Header>
       <Button title="Entrar" />
       <Button title="Cadastrar" variant="secondary"/>
+      {/* <Link to="./login">Is para o login</Link> */}
     </div>
   );
 }
