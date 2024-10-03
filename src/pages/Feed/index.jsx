@@ -1,30 +1,29 @@
-import Banner from '../../assets/banner.png';
-import { Button } from "../../components/Button";
+import { Card } from '../../components/Card';
 import { Header } from "../../components/Header";
-import { Container, TitleHighlight, Title, TextContent  } from "./styles";
+import { UserInfo } from '../../components/UserInfo';
+import { Column, Container, Title, TitleHighlight } from "./styles";
 
 const Feed = () => {
   return (<>
     <div className="App">
       <Header>Home</Header>
       <Container>
-        <div>
-          <Title>
-            <TitleHighlight>
-            Implemente
-            <br />
-            </TitleHighlight>
-             O Seu futuro blobal agora
-          </Title>
-          <TextContent>
-            Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo
-            e encare seu novo desafio profissional, evoluindo em comunidade com os melhores experts.
-          </TextContent>
-          <Button title="Começar agora" variant="secondary" />
-        </div>
-        <div>
-          <img src={Banner} alt="Imagem Principal" />
-        </div>
+        <Column flex={3}>
+          <Title>Feed</Title>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Column>
+        <Column flex={1}>
+          <TitleHighlight># Ranking Top 5 da Semana</TitleHighlight>
+          <UserInfo percentual={35} nome="Adriano Cruz" image="https://avatars.githubusercontent.com/u/17552862?s=400&u=b6bd20d83df4236a3a80306794ed63ed9145da28&v=4"/>
+          <UserInfo percentual={80} nome="Adriano Cruz" image="https://avatars.githubusercontent.com/u/17552862?s=400&u=b6bd20d83df4236a3a80306794ed63ed9145da28&v=4"/>
+          <UserInfo percentual={20} nome="Adriano Cruz" image="https://avatars.githubusercontent.com/u/17552862?s=400&u=b6bd20d83df4236a3a80306794ed63ed9145da28&v=4"/>
+          <UserInfo percentual={55} nome="Adriano Cruz" image="https://avatars.githubusercontent.com/u/17552862?s=400&u=b6bd20d83df4236a3a80306794ed63ed9145da28&v=4"/>
+        </Column>
       </Container>
     </div>
     </>);

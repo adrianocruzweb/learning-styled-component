@@ -9,33 +9,40 @@ export const Container = styled.main`
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    align-items: center;
 `
 
 export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    width: 320px;
-    margin-bottom: 20px;
-    line-height: 44px;
-
-    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
 `
 
 export const TitleHighlight = styled.span`
-    color: #E4105D;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF70;
+        margin-bottom: 24px;
 `
 
 export const TextContent = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    width: 420px;
-    margin-bottom: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
 
-    color: #fff;
+    color: #ffffff70;
+`
+//peso da coluna no flex para propoção e distribuição de espaçõ
+export const Column = styled.div`
+    flex:${({flex})=>flex};
+    padding-right:24px;
 `
