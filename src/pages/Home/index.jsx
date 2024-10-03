@@ -1,3 +1,4 @@
+import Banner from '../../assets/banner.png';
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Container, TitleHighlight, Title, TextContent  } from "./styles";
@@ -22,7 +23,7 @@ const Home = () => {
           <Button title="Começar agora" variant="secondary" />
         </div>
         <div>
-          <img src="#" alt="Imagem Principal" />
+          <img src={Banner} alt="Imagem Principal" />
         </div>
       </Container>
     </div>
