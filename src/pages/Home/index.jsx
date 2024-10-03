@@ -2,7 +2,7 @@ import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Container, TitleHighlight, Title, TextContent  } from "./styles";
 
-const App = () => {
+const Home = () => {
   return (<>
     <div className="App">
       <Header>Home</Header>
@@ -29,4 +29,4 @@ const App = () => {
     </>);
 }
 
-export default App;
+export {Home};

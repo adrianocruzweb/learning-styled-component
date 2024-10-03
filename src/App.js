@@ -7,7 +7,7 @@ import {
   
   import { Home } from './pages/Home'
   import { Login } from './pages/Login'
-  import { GlobalStyle } from './styles/global';
+  import { GlobalStyle } from './global';
   
   function App() {
     return (
