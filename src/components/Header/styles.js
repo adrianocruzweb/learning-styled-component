@@ -78,3 +78,8 @@ export const Input = styled.input`
     border: 0;
     color: #FFFFFF;
 `
+
+export const LogoDIO = styled.img`
+    width: 63px;
+    height: 25px;
+`

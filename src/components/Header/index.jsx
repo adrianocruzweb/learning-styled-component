@@ -10,7 +10,8 @@ import {
     MenuRight,
     Row,
     Wrapper,
-    UserPicture
+    UserPicture,
+    LogoDIO,
 } from './styles';
 
 const Header = ({autenticado}) => {
@@ -26,7 +27,7 @@ const Header = ({autenticado}) => {
     <Wrapper>
         <Container>
             <Row>
-                <img src={logo} alt="Logo da dio"/>
+                <LogoDIO src={logo} alt="Logo da dio"/>
                 {autenticado ? (
                     <>
                     <BuscarInputContainer>
