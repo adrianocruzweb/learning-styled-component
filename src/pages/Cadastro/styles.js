@@ -55,19 +55,21 @@ export const SecondRegisterSubtitle = styled.p`
     font-size: 18px;
     line-height: 24.51px;
     display: flex;
-    margin-top: 10px;
+    margin: 10px 0;
 `
 
 export const AlreadyHaveText = styled.span`
-    width: 185px;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 14px;
     line-height: 19.07px;
-    display: flex;
-    margin-top: 10px;
+    margin-right: 10px;
+`
 
-    strong {
-        color: #23DD7A;
-    }
+export const AlreadyHaveTextColor = styled.span`
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #23DD7A;
 `
