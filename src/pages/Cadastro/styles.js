@@ -12,5 +12,5 @@ export const Container = styled.div`
 `
 
 export const Column = styled.div`
-
+    flex: 1;
 `
