@@ -36,6 +36,7 @@ export const RegisterTitle = styled.h2`
     font-weight: 600;
     font-size: 32px;
     line-height: 43.58px;
+    margin-bottom: 10px;
 `
 
 export const RegisterSubtitle = styled.p`
@@ -44,6 +45,7 @@ export const RegisterSubtitle = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 24.51px;
+    margin-bottom: 25px;
 `
 
 export const SecondRegisterSubtitle = styled.p`
@@ -52,4 +54,20 @@ export const SecondRegisterSubtitle = styled.p`
     font-weight: 400;
     font-size: 18px;
     line-height: 24.51px;
+    display: flex;
+    margin-top: 10px;
+`
+
+export const AlreadyHaveText = styled.span`
+    width: 185px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.07px;
+    display: flex;
+    margin-top: 10px;
+
+    strong {
+        color: #23DD7A;
+    }
 `

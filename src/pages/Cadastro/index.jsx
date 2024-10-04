@@ -1,6 +1,7 @@
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import {
+  AlreadyHaveText,
   Column,
   Container,
   RegisterSubtitle,
@@ -33,7 +34,8 @@ const Cadastro = () => {
           <Button title="Criar minha conta" variant="secondary"/>
           <br />
           <SecondRegisterSubtitle>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</SecondRegisterSubtitle>
-          <p>Já tenho conta. <strong>Fazer login</strong></p>
+          <AlreadyHaveText>Já tenho conta. </AlreadyHaveText>
+          <AlreadyHaveText>Fazer login</AlreadyHaveText>
           </Wrapper>
         </Column>
       </Container>
