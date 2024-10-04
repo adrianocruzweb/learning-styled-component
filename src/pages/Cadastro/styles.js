@@ -22,10 +22,10 @@ export const Title = styled.h2`
     font-weight: 700;
     font-size: 32px;
     line-height: 43.58px;
+    margin-bottom: 20px;
 
 `
 
 export const Wrapper = styled.div`
     width: 374px;
-    height: 450px;
 `
