@@ -42,10 +42,10 @@ const Login = () => {
   } = useForm({
     resolver: yupResolver(schema),
     mode: 'onChange',
-  })
+  },[])
 
-  console.log(isValid, errors.email);
-  console.log(isValid, errors.password);
+/*   console.log(isValid, errors.email);
+  console.log(isValid, errors.password); */
 
   const onSubmit = async formData => {
     try {
@@ -58,10 +58,6 @@ const Login = () => {
     } catch (error) {
       alert('Houve um erro, tente novamente');
     }
-  }
-
-  const handleClickSignin = () => {
-    navigate('/feed');
   }
 
   return (<>

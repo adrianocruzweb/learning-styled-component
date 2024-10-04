@@ -7,6 +7,7 @@ import {
   
   import { Home } from './pages/Home'
   import { Login } from './pages/Login'
+  import { Cadastro } from './pages/Cadastro'
   import { GlobalStyle } from './global';
   
   function App() {
@@ -17,6 +18,7 @@ import {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/feed" element={<Feed />} />
+          <Route path="/cadastro" element={<Cadastro />} />
        </Routes >
       </Router>
     );

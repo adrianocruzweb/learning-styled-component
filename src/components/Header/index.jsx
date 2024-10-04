@@ -1,4 +1,5 @@
 import { Button } from '../Button';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logoDio.png'
 import {
     Container,
@@ -13,6 +14,14 @@ import {
 } from './styles';
 
 const Header = ({autenticado}) => {
+
+    const navigate = useNavigate();
+
+    const handleNavigate = ({page}) => {
+        console.log(page);
+        navigate(page);
+    }
+
   return (
     <Wrapper>
         <Container>
@@ -34,8 +43,8 @@ const Header = ({autenticado}) => {
                 ) : (
                     <>
                     <MenuRight>Home</MenuRight>
-                    <Button title="Entrar"/>
-                    <Button title="Cadastrar"/>
+                    <Button title="Entrar" onClick={() => handleNavigate({page: '/login'})}/>
+                    <Button title="Cadastrar" onClick={() => handleNavigate({page: '/cadastro'})}/>
                     </>
                 )}
             </Row>
