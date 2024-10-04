@@ -1,6 +1,5 @@
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
-import { Input } from "../../components/Input";
 import {
   Column,
   Container,
