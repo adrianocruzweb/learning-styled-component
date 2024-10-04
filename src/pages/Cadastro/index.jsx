@@ -4,6 +4,7 @@ import { Input } from "../../components/Input";
 import {
   Column,
   Container,
+  RegisterTitle,
   Title,
   Wrapper
 } from "./styles";
@@ -20,7 +21,7 @@ const Cadastro = () => {
         </Column>
         <Column>
           <Wrapper>
-          <h3>Comece agora grátis</h3>
+          <RegisterTitle>Comece agora grátis</RegisterTitle>
           <p>Crie sua conta e make the change._</p>
           <input name="nome"/>
           <br />

@@ -29,3 +29,11 @@ export const Title = styled.h2`
 export const Wrapper = styled.div`
     width: 374px;
 `
+
+export const RegisterTitle = styled.h2`
+    width: 368px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43.58px;
+`
