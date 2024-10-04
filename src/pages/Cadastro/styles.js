@@ -14,3 +14,10 @@ export const Container = styled.div`
 export const Column = styled.div`
     flex: 1;
 `
+
+export const Title = styled.h2`
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 32px;
+
+`

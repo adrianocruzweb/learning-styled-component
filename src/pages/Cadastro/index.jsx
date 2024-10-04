@@ -1,7 +1,8 @@
 import { Header } from "../../components/Header";
 import {
   Column,
-  Container
+  Container,
+  Title
 } from "./styles";
 
 const Cadastro = () => {
@@ -12,7 +13,11 @@ const Cadastro = () => {
   return (<>
       <Header>Home</Header>
       <Container>
-        <Column>A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas.</Column>
+        <Column>
+          <Title>
+            A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas.
+          </Title>
+        </Column>
         <Column>form</Column>
       </Container>
     </>);
