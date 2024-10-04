@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     max-width: 80%;
-    height: 47px;
+    margin: 0 auto;
+    margin-top: 120px;
 
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
 `
 
 export const Column = styled.div`
@@ -19,5 +20,6 @@ export const Title = styled.h2`
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 32px;
+    line-height: 43.58px;
 
 `
