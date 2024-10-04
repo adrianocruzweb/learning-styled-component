@@ -5,6 +5,7 @@ import {
   Container,
   RegisterSubtitle,
   RegisterTitle,
+  SecondRegisterSubtitle,
   Title,
   Wrapper
 } from "./styles";
@@ -31,7 +32,7 @@ const Cadastro = () => {
           <br />
           <Button title="Criar minha conta" variant="secondary"/>
           <br />
-          <p>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</p>
+          <SecondRegisterSubtitle>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</SecondRegisterSubtitle>
           <p>Já tenho conta. <strong>Fazer login</strong></p>
           </Wrapper>
         </Column>

@@ -45,3 +45,11 @@ export const RegisterSubtitle = styled.p`
     font-size: 18px;
     line-height: 24.51px;
 `
+
+export const SecondRegisterSubtitle = styled.p`
+    width: 372px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+`
