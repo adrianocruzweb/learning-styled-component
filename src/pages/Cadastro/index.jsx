@@ -4,13 +4,11 @@ import { Input } from "../../components/Input";
 import {
   Column,
   Container,
-  Title
+  Title,
+  Wrapper
 } from "./styles";
 
 const Cadastro = () => {
-
-
-
 
   return (<>
       <Header>Home</Header>
@@ -21,6 +19,7 @@ const Cadastro = () => {
           </Title>
         </Column>
         <Column>
+          <Wrapper>
           <h3>Comece agora grátis</h3>
           <p>Crie sua conta e make the change._</p>
           <input name="nome"/>
@@ -33,6 +32,7 @@ const Cadastro = () => {
           <br />
           <p>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</p>
           <p>Já tenho conta. <strong>Fazer login</strong></p>
+          </Wrapper>
         </Column>
       </Container>
     </>);

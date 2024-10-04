@@ -24,3 +24,8 @@ export const Title = styled.h2`
     line-height: 43.58px;
 
 `
+
+export const Wrapper = styled.div`
+    width: 374px;
+    height: 450px;
+`
