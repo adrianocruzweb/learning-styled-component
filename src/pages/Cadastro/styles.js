@@ -17,6 +17,7 @@ export const Column = styled.div`
 `
 
 export const Title = styled.h2`
+    width: 388px;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 32px;
