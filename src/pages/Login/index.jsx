@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import {MdLock,MdEmail} from 'react-icons/md';
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
+import {api} from "../../services/api";
 import { Input } from "../../components/Input";
 import {
   Container,
@@ -46,7 +47,18 @@ const Login = () => {
   console.log(isValid, errors.email);
   console.log(isValid, errors.password);
 
-  const onSubmit = data => console.log(data)
+  const onSubmit = async formData => {
+    try {
+      const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`)
+      if(data.length === 1){
+        navigate('/feed');
+      }else{
+        alert("email ou senha invalido ")
+      }
+    } catch (error) {
+      alert('Houve um erro, tente novamente');
+    }
+  }
 
   const handleClickSignin = () => {
     navigate('/feed');
