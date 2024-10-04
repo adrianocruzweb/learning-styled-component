@@ -10,3 +10,7 @@ export const Container = styled.div`
     align-items: center;
     margin: 0 auto;
 `
+
+export const Column = styled.div`
+
+`
