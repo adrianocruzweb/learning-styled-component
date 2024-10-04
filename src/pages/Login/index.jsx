@@ -35,6 +35,11 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  const handleNavigate = ({page}) => {
+    console.log(page);
+    navigate(page);
+  }
+
   const {
     control,
     handleSubmit,
@@ -43,9 +48,6 @@ const Login = () => {
     resolver: yupResolver(schema),
     mode: 'onChange',
   },[])
-
-/*   console.log(isValid, errors.email);
-  console.log(isValid, errors.password); */
 
   const onSubmit = async formData => {
     try {
@@ -80,7 +82,7 @@ const Login = () => {
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
-              <CriarText>Cadastrar</CriarText>
+              <CriarText onClick={()=>handleNavigate({page:'/cadastro'})}>Cadastrar</CriarText>
             </Row>
           </Wrapper>
         </Column>
