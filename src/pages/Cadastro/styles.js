@@ -37,3 +37,11 @@ export const RegisterTitle = styled.h2`
     font-size: 32px;
     line-height: 43.58px;
 `
+
+export const RegisterSubtitle = styled.p`
+    width: 300px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.51px;
+`

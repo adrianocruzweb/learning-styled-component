@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import {
   Column,
   Container,
+  RegisterSubtitle,
   RegisterTitle,
   Title,
   Wrapper
@@ -21,14 +22,14 @@ const Cadastro = () => {
         <Column>
           <Wrapper>
           <RegisterTitle>Comece agora grátis</RegisterTitle>
-          <p>Crie sua conta e make the change._</p>
+          <RegisterSubtitle>Crie sua conta e make the change._</RegisterSubtitle>
           <input name="nome"/>
           <br />
           <input name="nome"/>
           <br />
           <input name="nome"/>
           <br />
-          <Button title="Criar minha conta"/>
+          <Button title="Criar minha conta" variant="secondary"/>
           <br />
           <p>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</p>
           <p>Já tenho conta. <strong>Fazer login</strong></p>
