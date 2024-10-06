@@ -13,12 +13,13 @@ import {
     UserPicture,
     LogoDIO,
 } from './styles';
+import { IHeader } from './type';
 
-const Header = ({autenticado}) => {
+const Header = ({autenticado}: IHeader) => {
 
     const navigate = useNavigate();
 
-    const handleNavigate = ({page}) => {
+    const handleNavigate = ({page}: {page: string}) => {
         console.log(page);
         navigate(page);
     }
@@ -44,8 +45,8 @@ const Header = ({autenticado}) => {
                 ) : (
                     <>
                     <MenuRight>Home</MenuRight>
-                    <Button title="Entrar" onClick={() => handleNavigate({page: '/login'})}/>
-                    <Button title="Cadastrar" onClick={() => handleNavigate({page: '/cadastro'})}/>
+                    <Button title="Entrar" onClick={() => handleNavigate({page: '/login'})} />
+                    <Button title="Cadastrar" onClick={() => handleNavigate({page: '/cadastro'})} />
                     </>
                 )}
             </Row>

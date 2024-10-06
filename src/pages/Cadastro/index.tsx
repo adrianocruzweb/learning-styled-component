@@ -35,7 +35,7 @@ const Cadastro = () => {
 
   const navigate = useNavigate();
 
-  const handleNavigate = ({page}) => {
+  const handleNavigate = ({page}: {page: string}) => {
     console.log(page);
     navigate(page);
   }
@@ -47,7 +47,7 @@ const Cadastro = () => {
   } = useForm({
     resolver: yupResolver(schema),
     mode: 'onChange',
-  },[])
+  })
 
   return (<>
       <Header>Home</Header>
@@ -62,7 +62,7 @@ const Cadastro = () => {
             <RegisterTitle>Comece agora grátis</RegisterTitle>
             <RegisterSubtitle>Crie sua conta e make the change._</RegisterSubtitle>
             <form>
-              <Input name="name" errorMessage={errors?.nome?.message ?? ''} control={control} placeholder="Nome Completo" leftIcon={<MdPerson/>}/>
+              <Input name="name" errorMessage={errors?.name?.message ?? ''} control={control} placeholder="Nome Completo" leftIcon={<MdPerson/>}/>
               <Input name="email" errorMessage={errors?.email?.message ?? ''} control={control} placeholder="E-Mail" leftIcon={<MdEmail/>}/>
               <Input name="password" errorMessage={errors?.password?.message ?? ''} control={control} placeholder="Senha" type="password" leftIcon={<MdLock/>}/>
               <Button title="Criar minha conta" variant="secondary"/>
